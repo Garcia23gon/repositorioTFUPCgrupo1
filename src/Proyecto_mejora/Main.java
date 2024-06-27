@@ -21,14 +21,20 @@ public class Main {
             opcion = scanner.nextInt();
             scanner.nextLine();  // Limpiar el buffer
 
+            //Estas 3 variables se repetian en mas de 2 bloques y solo tienen alcance en un bloque
+            String codigo; //Declaro la variable codigo fuera de switch
+            String nombre; //Declaro la variable nombre fuera de switch
+            int cantidad;  //Declaro la variable cantidad fuera de switch
+
+
             switch (opcion) {
                 case 1:
                     System.out.print("Ingrese código del producto: ");
-                    String codigo = scanner.nextLine();
+                    codigo = scanner.nextLine();
                     System.out.print("Ingrese nombre del producto: ");
-                    String nombre = scanner.nextLine();
+                    nombre = scanner.nextLine();
                     System.out.print("Ingrese stock del producto: ");
-                    int cantidad = scanner.nextInt();
+                    cantidad = scanner.nextInt();
                     inventario.agregarProducto(new Producto(codigo, nombre, cantidad));
                     break;
                 case 2:

@@ -15,7 +15,7 @@ public class Main {
             System.out.println("1. Agregar producto");
             System.out.println("2. Eliminar producto");
             System.out.println("3. Actualizar stock del producto");
-            System.out.println("4. Mostrar productos");
+            System.out.println("4. Mostrar lista de productos");
             System.out.println("5. Salir");
             System.out.print("Seleccione una opción del menú: ");
             opcion = scanner.nextInt();

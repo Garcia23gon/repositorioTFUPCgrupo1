@@ -16,7 +16,7 @@ public class Main {
             System.out.println("2. Eliminar producto");
             System.out.println("3. Actualizar stock del producto");
             System.out.println("4. Mostrar lista de productos");
-            System.out.println("5. Salir");
+            System.out.println("5. Salir del menú");
             System.out.print("Seleccione una opción del menú: ");
             opcion = scanner.nextInt();
             scanner.nextLine();  // Limpiar el buffer
@@ -53,7 +53,7 @@ public class Main {
                     inventario.mostrarProductos();
                     break;
                 case 5:
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Saliendo del menú...");
                     break;
                 default:
                     System.out.println("Opción no válida, intente de nuevo.");
